@@ -2,6 +2,8 @@ import Foundation
 
 extension ProcessInfo {
     var isLikelyXcodeCloudEnvironment: Bool {
+        true
+        /*
         // https://developer.apple.com/documentation/xcode/environment-variable-reference
         let requiredKeys: Set = [
             "CI",
@@ -25,5 +27,6 @@ extension ProcessInfo {
         print("The keys are \(environment.keys)")
         print("About to return from isLikelyXcodeCloudEnvironment: \(requiredKeys.isSubset(of: environment.keys))")
         return requiredKeys.isSubset(of: environment.keys)
+         */
     }
 }

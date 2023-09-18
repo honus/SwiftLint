@@ -22,7 +22,8 @@ extension ProcessInfo {
             "CI_XCODE_SCHEME",
             "CI_XCODEBUILD_ACTION"
         ]
-
+        print("The keys are \(environment.keys)")
+        print("About to return from isLikelyXcodeCloudEnvironment: \(requiredKeys.isSubset(of: environment.keys))")
         return requiredKeys.isSubset(of: environment.keys)
     }
 }

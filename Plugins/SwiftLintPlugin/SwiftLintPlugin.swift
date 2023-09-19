@@ -33,7 +33,7 @@ struct SwiftLintPlugin: BuildToolPlugin {
             // so we need to ensure that any exclusion rules in the configuration are
             // respected.
             "--force-exclude",
-            "--no-cache"
+            "--cache-path", "\(workingDirectory)"
         ]
 
         // Manually look for configuration files, to avoid issues when the plugin does not execute our tool from the
